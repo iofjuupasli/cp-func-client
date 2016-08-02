@@ -2,8 +2,10 @@ const request = require('request-promise');
 const {fun, level} = require('./fun');
 require('colors');
 
+const url = 'http://95.85.20.139:3000'
+
 const server = (x, y) => {
-    return request(`http://localhost:3000?level=${level}&x=${x}&y=${y}`)
+    return request(`${url}?level=${level}&x=${x}&y=${y}`)
         .then(v => +v);
 }
 
