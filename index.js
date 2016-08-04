@@ -2,7 +2,7 @@ const request = require('request-promise');
 const {fun, level} = require('./fun');
 require('colors');
 
-const url = 'http://95.85.20.139:3000'
+const url = 'http://146.185.136.13:3000'
 
 const server = (x, y) => {
     return request(`${url}?level=${level}&x=${x}&y=${y}`)
