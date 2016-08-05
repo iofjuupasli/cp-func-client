@@ -25,11 +25,15 @@
 
 const fun = (x, y) => {
   let sum;
-  if (x >= 4) {
-    return (y*200) + (x*6);
+  let div = x/4;
+  let s;
+  let mul = 1;
+  for (var i = 0; div >= 1; i++) {
+    div = div/10;
+    mul *= 10;
   }
-  sum = (y*20) + (x*6);
-  return sum;
+  let res = mul * 20;
+  return (y*res) + (x*6);
 };
 
 const level = 4;
