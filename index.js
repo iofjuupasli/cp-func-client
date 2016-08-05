@@ -21,8 +21,8 @@ const test = (x, y) => {
         });
 };
 
-const xs = [0, 1, 2, 3, 4, 5];
-const ys = [0, 1, 2, 3, 4, 5];
+const xs = [0, 1, 2, 3, 4, 5, 100, 1000000];
+const ys = [0, 1, 2, 3, 4, 5, 100, 1000000];
 
 xs.forEach(x => {
     ys.forEach(y => {
