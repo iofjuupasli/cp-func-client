@@ -16,6 +16,13 @@
 //     return x * y
 // };
 
+// const fun = (x, y) => {
+//     if (y == 0) {
+//       return x+1;
+//     }
+//     else return  Math.pow(x, y) + x;
+// };
+
 const fun = (x, y) => {
   let sum;
   if (x >= 4) {
