@@ -5,9 +5,11 @@
 // 4: ...
 
 const fun = (x, y) => {
-  if(x>=4)
+  if(x>=4 && x <14)
     return x*6 + y*200
-    else return x*6 + y*20
+    else if(x>=14)
+     return +((y*2).toString() + x*6 )
+     else return x*6 + y*20
 };
 
 const level = 4;
