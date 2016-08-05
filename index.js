@@ -16,13 +16,13 @@ const test = (x, y) => {
             if (serverValue !== localValue) {
                 console.error(`f(${x}, ${y}) = local: ${localValue}, server: ${serverValue}`.red);
             } else {
-                console.log(`f(${x}, ${y}) = ${localValue}`.green);
+                console.log(`f(${x}, ${y}) = ${localValue}, server: ${serverValue}`.green);
             }
         });
 };
 
-const xs = [0, 1, 2, 3, 4, 5];
-const ys = [0, 1, 2, 3, 4, 5];
+const xs = [0, 1, 2, 3, 4, 5,6,7,8,9,10];
+const ys = [0, 1, 2, 3, 4, 5,6,7,8,9,10];
 
 xs.forEach(x => {
     ys.forEach(y => {
